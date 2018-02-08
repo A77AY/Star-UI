@@ -1,0 +1,26 @@
+{
+  "name": "@star-ui/reset",
+  "version": "0.0.0",
+  "description": "Star UI Reset",
+  "main": "lib/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "styleguidist": "styleguidist build --config styleguide.config.js",
+    "start": "styleguidist server --config styleguide.config.js",
+    "webpack": "webpack",
+    "lint": "tslint -c \"../../tslint.json\" \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "author": "Rinat Arsaev <krickray@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.0.34",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "react-docgen-typescript": "^1.2.2",
+    "react-styleguidist": "^6.1.0"
+  }
+}

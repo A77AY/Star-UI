@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "ES5",
+    "lib": ["ES2017", "DOM", "DOM.Iterable", "ScriptHost"],
+    "jsx": "react",
+    "noImplicitAny": false,
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["./packages/**/*"]
+}

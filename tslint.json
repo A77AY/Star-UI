@@ -1,0 +1,10 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-react"],
+  "jsRules": {},
+  "rules": {
+    "no-empty-interface": false,
+    "quotemark": [true, "single"]
+  },
+  "rulesDirectory": []
+}
