@@ -1,0 +1,22 @@
+sudo: false
+dist: trusty
+language: node_js
+cache:
+  yarn: true
+  directories:
+  - node_modules
+node_js:
+  - "node"
+  - '8'
+  - '7'
+  - '6'
+
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+
+install:
+  - npm install -g lerna@2.8.0
+  - yarn run bootstrap
+
+script:
+  - gulp /reset::tsc

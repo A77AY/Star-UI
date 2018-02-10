@@ -1,5 +1,7 @@
 # Star UI monorepo
 
+[![Build Status](https://travis-ci.org/Star-UI/Star-UI.svg?branch=master)](https://travis-ci.org/Star-UI/Star-UI)
+
 * **@star-ui/reset** Base reset and polyfill components
 
 ## Project management packages
