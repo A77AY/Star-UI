@@ -1,6 +1,6 @@
 {
   "name": "@star-ui/reset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Star UI Reset",
   "main": "lib/index.js",
   "scripts": {
