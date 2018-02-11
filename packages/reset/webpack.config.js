@@ -1,6 +1,10 @@
 const { CheckerPlugin } = require('awesome-typescript-loader');
 const path = require('path');
 
+const Paths = {
+  ROOT: path.join(__dirname, '../..'),
+};
+
 module.exports = {
   entry: {
     bundle: ['./index.ts'],
@@ -26,6 +30,28 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+              localIdentName: '[name]_[local]_[hash:base64:4]',
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.join(Paths.ROOT, 'postcss.config.js'),
+              },
+            },
+          },
+        ],
       },
     ],
   },
