@@ -1,8 +1,16 @@
 {
   "name": "star-ui",
   "version": "0.0.0",
-  "description": "Star UI",
   "private": true,
+  "description": "Star UI",
+  "keywords": [
+    "ui", "react"
+  ],
+  "homepage": "https://github.com/Star-UI/Star-UI/tree/master/packages/reset",
+  "bugs": "https://github.com/Star-UI/Star-UI/issues",
+  "repository": "Star-UI/Star-UI",
+  "author": "Rinat Arsaev <krickray@gmail.com>",
+  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
@@ -11,8 +19,6 @@
     "clean": "lerna clean --yes; del-cli node_modules",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json,prettierrc,eslintrc,babelrc,lintstagedrc}\""
   },
-  "author": "Rinat Arsaev <krickray@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "awesome-typescript-loader": "^3.4.1",
     "del-cli": "^1.1.0",

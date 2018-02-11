@@ -2,6 +2,14 @@
   "name": "@star-ui/reset",
   "version": "0.1.0",
   "description": "Star UI Reset",
+  "keywords": [
+    "ui", "react", "reset", "base", "polyfill"
+  ],
+  "homepage": "https://github.com/Star-UI/Star-UI",
+  "bugs": "https://github.com/Star-UI/Star-UI/issues",
+  "repository": "Star-UI/Star-UI",
+  "author": "Rinat Arsaev <krickray@gmail.com>",
+  "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
     "tsc": "tsc",
@@ -11,8 +19,6 @@
     "lint": "tslint -c \"../../tslint.json\" \"src/**/*.{ts,tsx}\"",
     "lint:fix": "npm run lint -- --fix"
   },
-  "author": "Rinat Arsaev <krickray@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
