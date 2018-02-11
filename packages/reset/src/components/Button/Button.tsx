@@ -8,12 +8,10 @@ export interface IButtonState {}
 /**
  * Button
  */
-class Button extends Component<IButtonProps, IButtonState> {
+export default class Button extends Component<IButtonProps, IButtonState> {
   public render() {
     const { children, ...restProps } = this.props;
 
     return <button {...restProps}>{children}</button>;
   }
 }
-
-export default Button;

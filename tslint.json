@@ -3,8 +3,9 @@
   "extends": ["tslint:recommended", "tslint-react"],
   "jsRules": {},
   "rules": {
+    "quotemark": [true, "single"],
     "no-empty-interface": false,
-    "quotemark": [true, "single"]
+    "no-var-requires": false
   },
   "rulesDirectory": []
 }
