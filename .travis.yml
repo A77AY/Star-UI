@@ -6,17 +6,32 @@ cache:
   directories:
   - node_modules
 node_js:
-  - "node"
-  - '8'
-  - '7'
-  - '6'
-
+- node
+- '8'
+- '6'
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-
+- curl -o- -L https://yarnpkg.com/install.sh | bash
 install:
-  - npm install -g lerna@2.8.0
-  - yarn run bootstrap
-
+- npm install -g lerna@2.8.0
+- yarn run bootstrap
 script:
-  - gulp /reset::tsc
+- gulp /reset::tsc
+#jobs:
+#  include:
+#  - stage: npm release
+#    node_js: node
+#    before_install:
+#    - curl -o- -L https://yarnpkg.com/install.sh | bash
+#    - git config --global user.email "travis@travis-ci.org"
+#    - git config --global user.name "Travis CI"
+#    - git status
+#    install:
+#    - npm install -g lerna@2.8.0
+#    - yarn run bootstrap
+#    before_script:
+#    - npm config set //registry.npmjs.org/:_authToken ${NPM_AUTH_TOKEN}
+#    script:
+#    - lerna publish --conventional-commits --yes
+#    branches:
+#      only:
+#      - master
