@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "description": "Star UI Reset",
   "keywords": [
-    "ui", "react", "reset", "base", "polyfill"
+    "ui",
+    "framework",
+    "react",
+    "base",
+    "normalize",
+    "polyfill",
+    "reset"
   ],
   "homepage": "https://github.com/Star-UI/Star-UI",
   "bugs": "https://github.com/Star-UI/Star-UI/issues",
@@ -20,8 +26,10 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "@types/classnames": "^2.2.3",
     "@types/react": "^16.3.10",
     "@types/react-dom": "^16.0.5",
+    "classnames": "^2.2.5",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
   },

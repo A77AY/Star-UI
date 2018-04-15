@@ -2,15 +2,14 @@ import * as React from 'react';
 
 const styles = require('./Select.css');
 
-interface ISelectProps
-  extends React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement> {}
+interface Props extends React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement> {}
 
-interface ISelectState {}
+interface State {}
 
 /**
  * Select
  */
-export default class Select extends React.Component<ISelectProps, ISelectState> {
+export default class Select extends React.Component<Props, State> {
   public state = {};
 
   public render() {

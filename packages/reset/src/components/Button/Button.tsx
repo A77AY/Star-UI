@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Component } from 'react';
 
-export interface IButtonProps
+export interface Props
   extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {}
-export interface IButtonState {}
+export interface State {}
 
 /**
  * Button
  */
-export default class Button extends Component<IButtonProps, IButtonState> {
+export default class Button extends Component<Props, State> {
   public render() {
     const { children, ...restProps } = this.props;
 

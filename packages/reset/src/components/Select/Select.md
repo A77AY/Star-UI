@@ -1,5 +1,3 @@
-Select example:
-
 ```js
 <Select size="3" multiple name="select">
   <option disabled>Select</option>

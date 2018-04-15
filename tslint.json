@@ -5,7 +5,9 @@
   "rules": {
     "quotemark": [true, "single"],
     "no-empty-interface": false,
-    "no-var-requires": false
+    "no-var-requires": false,
+    "interface-name": [true, "never-prefix"],
+    "arrow-parens": false
   },
   "rulesDirectory": []
 }
