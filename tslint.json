@@ -1,13 +1,13 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:recommended", "tslint-react"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "jsRules": {},
   "rules": {
     "quotemark": [true, "single"],
     "no-empty-interface": false,
     "no-var-requires": false,
     "interface-name": [true, "never-prefix"],
-    "arrow-parens": false
+    "linebreak-style": [true, "LF"]
   },
   "rulesDirectory": []
 }

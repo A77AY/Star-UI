@@ -1,5 +1,7 @@
 const path = require('path');
 const glob = require('glob');
+const reactDocGen = require('react-docgen');
+const reactDocGenTS = require('react-docgen-typescript');
 
 module.exports = {
   title: 'Star UI Reset',
@@ -8,6 +10,6 @@ module.exports = {
       return /\/[A-Z]\w*\.tsx$/.test(module);
     });
   },
-  resolver: require('react-docgen').resolver.findAllComponentDefinitions,
-  propsParser: require('react-docgen-typescript').withDefaultConfig().parse,
+  resolver: reactDocGen.resolver.findAllComponentDefinitions,
+  propsParser: reactDocGenTS.withDefaultConfig().parse,
 };

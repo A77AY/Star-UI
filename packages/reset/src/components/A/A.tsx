@@ -1,15 +1,21 @@
-import * as classNames from 'classnames';
 import * as React from 'react';
+import styled from 'styled-components';
+import { ExtendableElementProps, StyledRFC, StyledSFC } from '../../types';
 
-const css = require('./A.css');
+const AStyled = styled.a`
+  /* Correct the line height in all browsers. */
+  line-height: 1.15;
+  /* Remove the gray background on active links in IE 10. */
+  background-color: transparent;
+`;
 
-interface Props extends React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {}
+interface Props extends ExtendableElementProps<'a'> {}
 
 /**
  * Anchor
  */
-const A: React.SFC<Props> = ({ className = '', ...restProps }) => {
-  return <a className={classNames(css.A, className)} {...restProps} />;
+const A: StyledRFC<HTMLAnchorElement, Props> = (props, ref) => {
+  return <AStyled innerRef={ref} {...props} />;
 };
 
-export default A;
+export default React.forwardRef(A) as StyledSFC<Props>;

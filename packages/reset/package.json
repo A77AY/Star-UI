@@ -31,10 +31,10 @@
     "@types/react-dom": "^16.0.5",
     "classnames": "^2.2.5",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
-  },
-  "devDependencies": {
+    "react-docgen": "^3.0.0-beta12",
     "react-docgen-typescript": "^1.2.6",
-    "react-styleguidist": "^7.0.5"
+    "react-dom": "^16.3.1",
+    "react-styleguidist": "^7.0.5",
+    "styled-components": "^3.2.5"
   }
 }
