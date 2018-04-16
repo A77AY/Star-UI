@@ -7,7 +7,7 @@
     "ui",
     "react"
   ],
-  "homepage": "https://github.com/Star-UI/Star-UI/tree/master/packages/reset",
+  "homepage": "https://github.com/Star-UI/Star-UI/tree/master/packages/base",
   "bugs": "https://github.com/Star-UI/Star-UI/issues",
   "repository": "Star-UI/Star-UI",
   "author": "Rinat Arsaev <krickray@gmail.com>",

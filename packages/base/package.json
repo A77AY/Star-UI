@@ -1,7 +1,7 @@
 {
-  "name": "@star-ui/reset",
+  "name": "@star-ui/base",
   "version": "0.1.0",
-  "description": "Star UI Reset",
+  "description": "Star UI Base",
   "keywords": [
     "ui",
     "framework",

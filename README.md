@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/Star-UI/Star-UI.svg?branch=master)](https://travis-ci.org/Star-UI/Star-UI)
 
-* **@star-ui/reset** Base reset and polyfill components
+* **@star-ui/base** Base components
 
 ## Project management packages
 
@@ -16,19 +16,19 @@
 
 ## Usage
 
-1. Install global packages
+1.  Install global packages
 
 ```sh
 npm i -g yarn
 ```
 
-2. Install dependencies
+2.  Install dependencies
 
 ```sh
 yarn run bootstrap
 ```
 
-3. Start script
+3.  Start script
 
 ```sh
 cd packages/client

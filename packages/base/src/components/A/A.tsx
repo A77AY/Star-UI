@@ -11,11 +11,11 @@ const AStyled = styled.a`
 
 interface Props extends ExtendableElementProps<'a'> {}
 
-/**
- * Anchor
- */
 const A: StyledRFC<HTMLAnchorElement, Props> = (props, ref) => {
   return <AStyled innerRef={ref} {...props} />;
 };
 
+/**
+ * Anchor component
+ */
 export default React.forwardRef(A) as StyledSFC<Props>;

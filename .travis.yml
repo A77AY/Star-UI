@@ -15,7 +15,7 @@ install:
 - npm install -g lerna@2.10.1
 - yarn run bootstrap
 script:
-- gulp /reset::tsc
+- gulp /base::tsc
 #jobs:
 #  include:
 #  - stage: npm release
