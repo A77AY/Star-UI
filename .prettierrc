@@ -14,12 +14,6 @@
       "options": {
         "proseWrap": "always"
       }
-    },
-    {
-      "files": ["package.json"],
-      "options": {
-        "parser": false
-      }
     }
   ]
 }
