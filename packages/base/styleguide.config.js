@@ -16,4 +16,7 @@ module.exports = {
     const { name } = path.parse(componentPath);
     return `import { ${name} } from '@star-ui/base';`;
   },
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, 'utils/ThemeWrapper'),
+  },
 };

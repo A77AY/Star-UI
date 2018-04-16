@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled from '../../styled-components';
 import { ExtendableElementProps, StyledRFC, StyledSFC } from '../../types';
 
 const AStyled = styled.a`
