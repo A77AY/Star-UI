@@ -4,38 +4,31 @@
 
 * **@star-ui/base** Base components
 
-## Project management packages
+## Get started
 
-* Global
-
-  * [Yarn](https://yarnpkg.com/en/) - dependency manager
-
-* Local
-
-  * [Lerna](https://github.com/lerna/lerna) - monorepo management tool
-
-## Usage
-
-1.  Install global packages
+0.  Install global packages
 
 ```sh
-npm i -g yarn
+npm i -g yarn lerna
 ```
 
-2.  Install dependencies
+1.  Install dependencies
 
 ```sh
 yarn run bootstrap
 ```
 
-3.  Start script
+2.  Start script
 
 ```sh
 cd packages/client
 yarn run start
 ```
 
-## Work with dependency
+## Project management
+
+Used **[Lerna](https://github.com/lerna/lerna)** monorepo management tool with **[Yarn](https://yarnpkg.com/en/)**
+dependecy manager
 
 ### Adding a dependency
 
@@ -50,3 +43,13 @@ Install <package> to <@root/module>:
 ```sh
 lerna add <package>[@version] [--dev] --scope=<@root/module>
 ```
+
+## Git config
+
+* `LF` line ending (line feed, `\n`).
+
+  For automatic correction you can do:
+
+  ```sh
+  git config --global core.autocrlf input
+  ```
