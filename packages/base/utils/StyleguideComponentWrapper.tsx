@@ -3,15 +3,13 @@ import { ThemeProvider } from 'styled-components';
 import Theme from '../src/theme/Theme';
 
 const theme: Theme = {
-  colors: {
-    main: 'red',
-  },
+  colors: {},
 };
 
 /**
  * Theme wrapper
  */
-export default class ThemeWrapper extends React.Component {
+export default class StyleguideComponentWrapper extends React.Component {
   public render() {
     return <ThemeProvider theme={theme}>{this.props.children}</ThemeProvider>;
   }
