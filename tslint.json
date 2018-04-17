@@ -7,7 +7,9 @@
     "no-empty-interface": false,
     "no-var-requires": false,
     "interface-name": [true, "never-prefix"],
-    "linebreak-style": [true, "LF"]
+    "linebreak-style": [true, "LF"],
+    "object-literal-sort-keys": false,
+    "max-classes-per-file": false
   },
   "rulesDirectory": []
 }

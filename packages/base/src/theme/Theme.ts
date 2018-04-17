@@ -1,3 +1,4 @@
 export default interface Theme {
-  colors: {};
+  colors?: any;
+  sizes?: any;
 }
