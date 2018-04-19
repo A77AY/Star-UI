@@ -48,7 +48,6 @@ module.exports = {
   },
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'utils/StyleguideComponentWrapper'),
-    StyleGuideRenderer: path.join(__dirname, 'utils/StyleguideRenderer'),
+    // StyleGuideRenderer: path.join(__dirname, 'utils/StyleguideRenderer'),
   },
-  theme: {},
 };

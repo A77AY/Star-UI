@@ -6,7 +6,8 @@
     "lib": ["ES2017", "DOM", "DOM.Iterable", "ScriptHost"],
     "jsx": "react",
     "noImplicitAny": false,
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": ["./node_modules/@types"],
+    "experimentalDecorators": true
   },
   "include": ["./packages/**/*"]
 }
