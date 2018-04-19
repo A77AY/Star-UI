@@ -1,4 +1,4 @@
-# Star UI Base
+# 🌟 Star UI Base
 
 [![npm version](https://badge.fury.io/js/%40star-ui%2Fbase.svg)](https://badge.fury.io/js/%40star-ui%2Fbase)
 

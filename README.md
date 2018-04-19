@@ -1,4 +1,4 @@
-# Star UI monorepo
+# 🌟 Star UI
 
 [![Build Status](https://travis-ci.org/Star-UI/Star-UI.svg?branch=master)](https://travis-ci.org/Star-UI/Star-UI)
 
