@@ -1,5 +1,6 @@
-import throttle from 'lodash-es/throttle';
 import * as React from 'react';
+
+import { throttle } from 'lodash';
 import styled from '../src/styled-components';
 import themeProvider from './themeProvider';
 

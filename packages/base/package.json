@@ -23,7 +23,8 @@
     "start": "styleguidist server --config styleguide.config.js",
     "webpack": "webpack",
     "lint": "tslint -c \"../../tslint.json\" \"src/**/*.{ts,tsx}\"",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha --require ts-node/register --watch-extensions ts,tsx \"src/**/*.spec.{ts,tsx}\""
   },
   "dependencies": {
     "@types/classnames": "^2.2.3",
