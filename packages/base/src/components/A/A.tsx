@@ -4,12 +4,11 @@ import { ExtendableElementProps } from '../../types';
 import { styledForwardRef } from '../../utils';
 
 const StyledA = styled.a`
-  /* Correct the line height in all browsers. */
-  line-height: 1.15;
-  /* Remove the gray background on active links in IE 10. */
-  background-color: transparent;
-
+  font-size: ${({ theme }) => theme.sizes.font};
+  line-height: ${({ theme }) => theme.sizes.base};
+  color: ${({ theme }) => theme.colors.neutral.get(0).toString()};
   text-decoration: none;
+  background-color: 'transparent';
 
   :visited {
   }

@@ -6,9 +6,8 @@ cache:
   directories:
   - node_modules
 node_js:
-- node
+- '9'
 - '8'
-- '6'
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 install:
@@ -16,6 +15,24 @@ install:
 - yarn run bootstrap
 script:
 - gulp /base::tsc
+
+jobs:
+  include:
+    - stage: deploy
+      node_js:
+      - '9'
+      script:
+      - gulp /base::build
+      deploy:
+        provider: pages
+        before_deploy: gulp /base::build
+        skip-cleanup: true
+        github-token: $GITHUB_TOKEN
+        keep-history: true
+        local-dir: packages/base/styleguide
+        on:
+          branch: develop
+
 #jobs:
 #  include:
 #  - stage: npm release

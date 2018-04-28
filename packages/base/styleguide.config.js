@@ -36,7 +36,11 @@ module.exports = {
     },
     {
       name: 'Components',
-      components: 'src/components/**/*.{ts,tsx}',
+      components: () => {
+        return glob.sync(path.resolve(__dirname, 'src/components/**/*.tsx')).filter(module => {
+          return /\/[A-Z]\w*\.tsx$/.test(module);
+        });
+      },
     },
   ],
   resolver: reactDocGen.resolver.findAllComponentDefinitions,

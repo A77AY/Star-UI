@@ -19,7 +19,7 @@
   "main": "lib/index.js",
   "scripts": {
     "tsc": "tsc",
-    "styleguidist": "styleguidist build --config styleguide.config.js",
+    "build": "styleguidist build --config styleguide.config.js",
     "start": "styleguidist server --config styleguide.config.js",
     "webpack": "webpack",
     "lint": "tslint -c \"../../tslint.json\" \"src/**/*.{ts,tsx}\"",

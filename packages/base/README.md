@@ -4,6 +4,8 @@
 
 Base components
 
+👁️ [Demo](https://star-ui.github.io/Star-UI/)
+
 ## Install
 
 ```sh

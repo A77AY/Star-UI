@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Star-UI/Star-UI.svg?branch=master)](https://travis-ci.org/Star-UI/Star-UI)
 
-* **@star-ui/base** Base components
+* [**@star-ui/base** Base components](https://github.com/Star-UI/Star-UI/tree/master/packages/reset)
+  ([demo](https://star-ui.github.io/Star-UI/))
 
 ## Get started
 

@@ -33,6 +33,7 @@ const defaultColor: RGBColor = {
 export default class Color {
   public static readonly White = new Color(255, 255, 255);
   public static readonly Black = new Color(0, 0, 0);
+  public static readonly Gray = new Color(127, 127, 127);
   public static readonly default: RGBColor = defaultColor;
   public static readonly LuminanceK = {
     R: 0.2126,
@@ -50,10 +51,10 @@ export default class Color {
     return color0.contrast(color1);
   }
 
-  private r: number = defaultColor.r;
-  private g: number = defaultColor.g;
-  private b: number = defaultColor.b;
-  private a: number = defaultColor.a;
+  public r: number = defaultColor.r;
+  public g: number = defaultColor.g;
+  public b: number = defaultColor.b;
+  public a: number = defaultColor.a;
 
   public constructor(arg0?: number | string | RGBColor | number[], g?: number, b?: number, a?: number) {
     switch (typeof arg0) {

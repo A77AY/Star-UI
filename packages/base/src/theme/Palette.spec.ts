@@ -15,6 +15,7 @@ describe('Palette', () => {
     it('calculated', () => {
       const color = new Color('#0116ff');
       const palette = new Palette([color]);
+      // console.dir(palette.colors.map(c => c.toJSON()));
       expect(palette.get(0.49)).to.be.instanceof(Color);
     });
   });

@@ -69,4 +69,21 @@ describe('Color', () => {
       expect(15.5).to.equal(round(colorByContrast.contrast(Color.White), 1));
     });
   });
+  describe('blend', () => {
+    it('white and black', () => {
+      const color = Color.blend(Color.White, Color.Black);
+      expect(color.r)
+        .to.be.at.least(Color.White.r)
+        .and.to.be.most(Color.Black.r);
+      expect(color.g)
+        .to.be.at.least(Color.White.g)
+        .and.to.be.most(Color.Black.g);
+      expect(color.b)
+        .to.be.at.least(Color.White.b)
+        .and.to.be.most(Color.Black.b);
+      expect(color.a)
+        .to.be.at.least(Color.White.a)
+        .and.to.be.most(Color.Black.a);
+    });
+  });
 });

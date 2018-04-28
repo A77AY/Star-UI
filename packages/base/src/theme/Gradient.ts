@@ -1,32 +1,28 @@
 import { round } from 'lodash';
 import Color from './Color';
+import Palette from './Palette';
 
-export default class Palette {
-  public colors: Color[];
-  public baseColors: number;
+export default class Gradient {
+  public palettes: Palette[];
 
   /**
-   * @param colors Maximum 99 base colors
+   * @param palettes Maximum 10 base pallettes
    */
-  constructor(colors: Color[]) {
-    this.colors = new Array(100);
-    this.colors[0] = Color.Black;
-    this.colors[100] = Color.White;
+  constructor(colors: Palette[]) {
+    this.palettes = new Array(100);
     const count = colors.length;
-    const parts = 100 / (count + 1);
+    const parts = 10 / (count + 1);
     // TODO It is necessary to init only basic, and at the first 'get' to calculate, and then to take from a cache
     for (let i = 0, part, beforePart = 0; i < colors.length; ++i) {
       part = Math.round((i + 1) * parts);
-      this.colors[part] = colors[i];
+      this.palettes[part] = colors[i];
       for (let j = 1; j < part - beforePart; ++j) {
         const k = 1 / (part - beforePart) * j;
-        this.colors[j + beforePart] = Color.blend(this.colors[beforePart], this.colors[part], k);
+        // this.palettes[j + beforePart] = Color.blend(this.palettes[beforePart], this.palettes[part], k);
       }
       beforePart = part;
     }
   }
-
-  public getBase(num: number) {}
 
   /**
    * Get color
@@ -37,13 +33,13 @@ export default class Palette {
    * @param lightness 0..1
    * @return color
    */
-  public get = (lightness: number): Color => {
+  public get = (lightness: number): Palette => {
     lightness = round(lightness, 2);
     if (lightness < 0) {
       lightness = 0;
     } else if (lightness > 1) {
       lightness = 1;
     }
-    return this.colors[lightness * 100];
+    return this.palettes[lightness * 100];
   };
 }
