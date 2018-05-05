@@ -1,0 +1,41 @@
+{
+  "name": "@star-ui/base",
+  "version": "0.1.0",
+  "description": "Star UI Base",
+  "keywords": [
+    "ui",
+    "framework",
+    "react",
+    "base",
+    "normalize",
+    "polyfill",
+    "reset"
+  ],
+  "homepage": "https://github.com/Star-UI/Star-UI",
+  "bugs": "https://github.com/Star-UI/Star-UI/issues",
+  "repository": "Star-UI/Star-UI",
+  "author": "Rinat Arsaev <krickray@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "styleguidist build --config styleguide.config.js",
+    "start": "styleguidist server --config styleguide.config.js",
+    "webpack": "webpack",
+    "lint": "tslint -c \"../../tslint.json\" \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha --require ts-node/register --watch-extensions ts,tsx \"src/**/*.spec.{ts,tsx}\""
+  },
+  "dependencies": {
+    "@types/classnames": "^2.2.3",
+    "@types/react": "^16.3.12",
+    "@types/react-dom": "^16.0.5",
+    "classnames": "^2.2.5",
+    "react": "^16.3.2",
+    "react-docgen": "^2.20.1",
+    "react-docgen-typescript": "^1.3.0",
+    "react-dom": "^16.3.2",
+    "react-styleguidist": "^7.0.8",
+    "styled-components": "^3.2.6"
+  }
+}

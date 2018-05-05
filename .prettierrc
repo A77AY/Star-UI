@@ -1,0 +1,19 @@
+{
+  "printWidth": 120,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": [".prettierrc", ".stylelintrc", ".eslintrc", ".babelrc", ".lintstagedrc"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "proseWrap": "always"
+      }
+    }
+  ]
+}
